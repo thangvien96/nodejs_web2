@@ -1,5 +1,5 @@
 const express = require('express');
-const morgan = require('morgan');
+//const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const { engine } = require('express-handlebars');
 const route = require('./routes');
@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //form-urlencoded
 
 
-app.use(morgan('combined'));
+//app.use(morgan('combined'));
 
 app.use(
   session({
